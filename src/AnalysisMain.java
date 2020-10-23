@@ -16,8 +16,10 @@ public class AnalysisMain {
         list.add(62);
 
         long start = System.nanoTime(); //take time at start of algorithm, before it has started processing
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.run(list); //run the algorithm
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.run(list); //run the algorithm
+        QuickSort quickSort = new QuickSort();
+        quickSort.run(list);
 
         for(int i=0;i< list.size();i++){
             System.out.print(list.get(i)+ " ");
