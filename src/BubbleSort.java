@@ -1,7 +1,7 @@
 import java.util.Collections;
 import java.util.List;
 
-public class BubbleSort {
+public class BubbleSort implements Algorithm {
     public void run(List<Integer> listToSort){
         int n = listToSort.size();//size of the input
 
@@ -16,5 +16,10 @@ public class BubbleSort {
                 }
             }
         }
+    }
+
+    @Override
+    public String getAlgorithmName() {
+        return "BubbleSort";
     }
 }
